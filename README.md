@@ -7,5 +7,7 @@
 
 # Usage
 ```
-$ python star_align.py test_file prediction_file vocab_file {RHS,LHS} > output
+$ python star_align.py test_file prediction_file vocab_file label_side > output
 ```
+ここで、vocab\_fileはStarSpaceが生成したモデルのtsvファイルを指定し、label\_sideでは{RHS, LHS}のいずれかを指定する。  
+test\_file中において、ラベルが記載されている位置と対応づけて{RHS, LHS}を指定する。  
